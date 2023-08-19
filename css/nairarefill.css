@@ -1,0 +1,167 @@
+:root {
+    --tinto-form-paddings: 2.5rem;
+
+    --tinto-color-accent-500: hsla(201, 78%, 46%, 1);
+    --tinto-color-accent-700: hsla(202, 82%, 40%, 1);
+
+    --tinto-color-gray-100: hsla(0, 0%, 96%, 1);
+    --tinto-color-gray-300: hsla(0, 0%, 0%, 0.16);
+    --tinto-color-gray-700: hsla(0, 0%, 61%, 1);
+    --tinto-color-gray-500: hsla(0, 0%, 69%, 1);
+    --tinto-color-gray-700: hsla(0, 0%, 61%, 1);
+    --tinto-color-gray-900: hsla(0, 0%, 23%, 1);
+
+    --tinto-font-family: 'Open Sans', sans-serif;
+    --tinto-color-text: var(--tinto-color-gray-700);
+    --tinto-color-header: var(--tinto-color-gray-900);
+    --tinto-link-color: var(--tinto-color-accent-700);
+
+    --tinto-form-control-border: none;
+    --tinto-form-control-padding: var(--tinto-p2) var(--tinto-p4);
+    --tinto-form-control-radius: 12px;
+    --tinto-form-control-background: var(--tinto-color-gray-100);
+    --tinto-shadow-color: var(--tinto-color-gray-300);
+}
+
+.tinto-container {
+    background-size: contain;
+    font-size: 0.875rem;
+    font-size: var(--tinto-text-sm);
+    display: flex;
+    align-items: center;
+}
+
+.tinto-inner {
+    display: block;
+    height: auto;
+}
+
+.tinto-form {
+    padding: 2.5rem;
+    padding: var(--tinto-form-paddings);
+    background: white;
+    border-radius: 12px;
+}
+
+.tinto-logo {
+    color: hsla(0, 0%, 61%, 1);
+    color: var(--tinto-color-gray-700);
+}
+
+@media (min-width: 768px) {
+    .tinto-logo {
+        color: white;
+    }
+
+    .tinto-container-1 {
+        background: url('../img/hero-login.jpg') center top no-repeat
+            hsla(201, 78%, 46%, 1);
+        background: url('../img/hero-login.jpg') center top no-repeat
+            var(--tinto-color-accent-500);
+    }
+
+    .tinto-container-2 {
+        background: url('../img/hero-register.jpg') center top no-repeat
+            hsla(201, 78%, 46%, 1);
+        background: url('../img/hero-register.jpg') center top no-repeat
+            var(--tinto-color-accent-500);
+    }
+
+    .tinto-form {
+        box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.16);
+        box-shadow: var(--tinto-shadow);
+    }
+}
+
+.tinto-form a {
+    font-size: 0.875rem;
+    font-size: var(--tinto-text-sm);
+}
+
+/* FORMS */
+
+.tinto-form .form-group {
+    margin-bottom: 1rem;
+    margin-bottom: var(--tinto-p4);
+    background: hsla(0, 0%, 96%, 1);
+    background: var(--tinto-form-control-background);
+    border-radius: 12px;
+    border-radius: var(--tinto-form-control-radius);
+    transition: box-shadow 0.3s;
+}
+
+.tinto-form .form-group.focused:not(.has-error) {
+    background: white;
+    box-shadow: 0 1px 4px hsla(0, 0%, 0%, 0.16);
+    box-shadow: 0 1px 4px var(--tinto-color-gray-300);
+}
+
+.tinto-form .form-control,
+.tinto-form .input-group-text {
+    color: hsla(0, 0%, 61%, 1);
+    color: var(--tinto-color-gray-700);
+    background: transparent;
+}
+
+.tinto-form .form-control::-webkit-input-placeholder {
+    color: hsla(0, 0%, 61%, 1);
+    color: var(--tinto-color-gray-700);
+}
+
+.tinto-form .form-control::-moz-placeholder {
+    color: hsla(0, 0%, 61%, 1);
+    color: var(--tinto-color-gray-700);
+}
+
+.tinto-form .form-control:-ms-input-placeholder {
+    color: hsla(0, 0%, 61%, 1);
+    color: var(--tinto-color-gray-700);
+}
+
+.tinto-form .form-control::-ms-input-placeholder {
+    color: hsla(0, 0%, 61%, 1);
+    color: var(--tinto-color-gray-700);
+}
+
+.tinto-form .form-control::placeholder {
+    color: hsla(0, 0%, 61%, 1);
+    color: var(--tinto-color-gray-700);
+}
+
+.tinto-container
+    .custom-control-input:checked
+    ~ .custom-control-label::before {
+    border-color: hsla(201, 78%, 46%, 1);
+    border-color: var(--tinto-color-accent-500);
+    background-color: hsla(201, 78%, 46%, 1);
+    background-color: var(--tinto-color-accent-500);
+}
+
+/* BUTTONS */
+
+.tinto-form .btn {
+    border-radius: 12px;
+    border-radius: var(--tinto-form-control-radius);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    padding: var(--tinto-p2) var(--tinto-p4);
+}
+
+.tinto-container .line {
+    background: hsla(0, 0%, 69%, 1);
+    background: var(--tinto-color-gray-500);
+    height: 1px;
+    margin-top: 12px;
+    text-align: center;
+}
+.tinto-container .line span {
+    background: #fff;
+    padding: 8px;
+    position: relative;
+    top: -12px;
+}
+
+.tinto-container .btn-icon.btn-flat {
+    width: 32px;
+    height: 32px;
+}
